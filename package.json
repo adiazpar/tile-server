@@ -10,7 +10,11 @@
         "process-tiff": "node scripts/process-tiff.js",
         "health-check": "curl -f http://localhost:3001/health || exit 1",
         "clean-tiles": "rm -rf tiles/*",
-        "clean-logs": "rm -rf logs/*.json"
+        "clean-logs": "rm -rf logs/*.json",
+        "helper": "node tile-helper.js",
+        "server": "node tile-helper.js",
+        "quick": "node tile-helper.js quick",
+        "full": "node tile-helper.js full"
     },
     "keywords": [
         "tiles",
